@@ -31,7 +31,7 @@ public class PersonFactory {
 	}
 
 	public PersonFactory() {
-		typeClassMap = populateTypeClassMap(getAllPluginClasses());
+		typeClassMap = populateTypeClassMap(getAllPersonClasses());
 	}
 
 	protected Map<String, Class> populateTypeClassMap(
@@ -84,7 +84,7 @@ public class PersonFactory {
 	/**
 	 * 
 	 */
-	protected List<String> getAllPluginClasses() {
+	protected List<String> getAllPersonClasses() {
 		List<String> list = new ArrayList<>();
 
 		// Getting all the class files (Using Spring Beans And Context)
